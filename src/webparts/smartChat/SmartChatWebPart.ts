@@ -21,7 +21,8 @@ export default class SmartChatWebPart extends BaseClientSideWebPart<ISmartChatWe
     const element: React.ReactElement<ISmartChatProps > = React.createElement(
       SmartChat,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        clickEnviar: this.prueba
       }
     );
 
@@ -54,7 +55,7 @@ export default class SmartChatWebPart extends BaseClientSideWebPart<ISmartChatWe
     };
   }
 
-  protected prueba():void{
-    alert("clic");
+  public prueba():void{
+    alert(ReactDom);
   }
 }
